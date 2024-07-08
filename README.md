@@ -27,15 +27,26 @@ ERD
 ![Image](e-library_ERD.png)
 
 ## Create Dummy Data
-Dummy data for development are creating using Python libraries such as Panda and Faker, the script available [here]
+Dummy data for development are creating using Python libraries such as Panda and Faker, the script (using notebook in Collaborator) is available [here](e-library_dummy.ipynb)
 
+Comment were written for each data table generation, you could freely modify the number of data by modifying range in the script.
 
 ## Data Analysis
-The Dummy data are input into the database and utilized for data analysis.
+The generated dummy data could be imported to database using the import tools of postgresql or copy statement.
 
-5 Questions and sql query used for analysis:
-1. How many books are in each library's collection?
-2. Which are the most borrowed genres across all libraries?
-3. What is the average borrowing duration for users?
-4. Which book with the most number of holds?
-5. Which libraries have the highest and lowest borrowing rates?
+This data could be utilized as an data analysis practice, e.g for below questions:
+1. Which books have highest number of loans?
+   *The result will shows the popular books, and could be utilized to consider book copies availability and procurement strategy
+2. What are the most popular book categories?
+   *Similar with above questions, it will shows popular book categories which correlates with the user interest
+3. Which users has borrowed the most books?
+   *It could shows the most active users and help to strategize promotion or rewards campaign
+4. Which libraries have the most number of holds?
+   *This could gives insight in the library operation and books distribution or logistics
+5. Which books have the highest number of holds?
+   *The result will shows the lack availability of books and help to identify the procurement needs
+The SQL query for above questions could be found in the [file](e_library_analytics.sql)
+
+The database structure has possibility to be implemented for other rental applications or even pre-order type store.
+
+Feel free to use it.
