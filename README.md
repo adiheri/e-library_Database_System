@@ -20,11 +20,11 @@ To develop a database and accomodate user-friendly e-library platform that empow
    * member's borrow and hold limitation system
 
 ### Table Structure
-Table and its relational is created using sql (Postgresql). The Data Definition Language (DDL) syntax can be found in the [file]
+Table and its relational is created using sql (Postgresql). The Data Definition Language (DDL) syntax can be found in the [file](e_library_table.sql)
 
 ERD
 
-![Image]
+![Image](e-library_ERD.png)
 
 ## Create Dummy Data
 Dummy data for development are creating using Python libraries such as Panda and Faker, the script available [here]
